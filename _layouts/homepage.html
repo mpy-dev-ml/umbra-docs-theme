@@ -6,7 +6,7 @@
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
   </head>
-  <body class="markdown-body">
+  <body>
     <div class="container">
       <header class="site-header">
         <nav class="site-nav">
@@ -19,8 +19,8 @@
         </nav>
       </header>
 
-      <main class="site-content">
-        {{ content }}
+      <main class="site-content markdown-body">
+        {{ content | markdownify }}
       </main>
 
       <footer class="site-footer">
