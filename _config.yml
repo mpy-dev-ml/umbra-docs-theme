@@ -35,11 +35,30 @@ doks:
 
 # SASS settings
 sass:
-    sass_dir: ./doks-theme/_sass
-    style: :compressed
+  sass_dir: _sass
+  style: compressed
 
 # Jekyll settings
+markdown: kramdown
+highlighter: rouge
 layouts_dir: ./doks-theme/_layouts
 includes_dir: ./doks-theme/_includes
-exclude: [ 'README.md', 'CHANGELOG.md' ]
+exclude: 
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
+  - .github
+  - LICENSE
+  - README.md
+  - CHANGELOG.md
 permalink: /:title/
+
+# Plugin settings
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-remote-theme
+  - jekyll-paginate
