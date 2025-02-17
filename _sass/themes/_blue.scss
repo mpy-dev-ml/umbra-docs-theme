@@ -1,0 +1,37 @@
+// Blue theme
+$color-theme:                  #0066cc;
+$color-theme-dark:            darken($color-theme, 10%);
+$color-theme-light:           lighten($color-theme, 40%);
+
+$color-text:                  #2E2E2E;
+$color-text-light:           #666666;
+
+$color-background:            #ffffff;
+$color-background-dark:      #f5f5f5;
+$color-background-light:     #fafafa;
+
+$color-border:               #eeeeee;
+$color-border-dark:          darken($color-border, 10%);
+
+// Buttons
+$button-background:          $color-theme;
+$button-background-hover:    darken($color-theme, 10%);
+$button-color:              #ffffff;
+$button-border-radius:      4px;
+
+// Links
+$link-color:                $color-theme;
+$link-color-hover:          darken($color-theme, 10%);
+
+// Header
+$header-background:         $color-theme;
+$header-color:             #ffffff;
+
+// Footer
+$footer-background:         $color-background-dark;
+$footer-color:             $color-text-light;
+
+// Code
+$code-background:          #f8f8f8;
+$code-color:              #333333;
+$code-border:             #e5e5e5;
