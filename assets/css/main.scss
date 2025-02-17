@@ -10,13 +10,14 @@
 /* ----- Charset ----- */
 @charset 'utf-8';
 
-/* ----- Base ----- */
 @import "variables";
+
+// Base
 @import "generic/base";
 @import "generic/code";
 @import "generic/normalize";
 
-/* ----- Tools ----- */
+// Tools
 @import "tools/clearfix";
 @import "tools/grid";
 @import "tools/grid-framework";
@@ -25,7 +26,7 @@
 @import "tools/prefixer";
 @import "tools/responsive-visibility";
 
-/* ----- Objects ----- */
+// Objects
 @import "objects/buttons";
 @import "objects/content";
 @import "objects/error-404";
@@ -33,7 +34,7 @@
 @import "objects/icons";
 @import "objects/section";
 
-/* ----- Components ----- */
+// Components
 @import "components/callout";
 @import "components/example";
 @import "components/hero-subheader";
@@ -46,9 +47,9 @@
 @import "components/social-list";
 @import "components/title-anchor-link";
 
-/* ----- Utilities ----- */
+// Utilities
 @import "utilities/alignment";
 @import "utilities/visibility";
 
-/* ----- Themes ----- */
+// Theme
 @import "themes/blue";
