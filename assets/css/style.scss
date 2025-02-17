@@ -55,31 +55,93 @@
 // Theme
 @import "themes/blue";
 
-// Override any GitHub Pages defaults
-.markdown-body {
+// Custom styles
+body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.6;
   color: $color-text;
   background-color: $color-background;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.site-header {
+  background-color: $color-theme;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+  
+  .site-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .site-title {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  
+  .site-links {
+    a {
+      color: rgba(255, 255, 255, 0.9);
+      text-decoration: none;
+      margin-left: 1.5rem;
+      
+      &:hover {
+        color: white;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.site-content {
+  padding: 2rem 0;
   
   h1, h2, h3, h4, h5, h6 {
     color: $color-text;
-    border-bottom: none;
     margin-top: 1.5em;
     margin-bottom: 0.5em;
+    font-weight: 600;
   }
-
+  
+  h1 {
+    font-size: 2.5rem;
+    border-bottom: 1px solid $color-border;
+    padding-bottom: 0.3em;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
   a {
     color: $color-theme;
     text-decoration: none;
-
+    
     &:hover {
       color: $color-theme-dark;
       text-decoration: underline;
     }
   }
-
+  
   code {
     font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
     background-color: $code-background;
@@ -88,18 +150,26 @@
     border-radius: 3px;
     padding: 0.2em 0.4em;
   }
-
+  
   pre {
     background-color: $code-background;
     border: 1px solid $code-border;
     border-radius: 3px;
     padding: 1em;
     overflow: auto;
-
+    
     code {
       background: none;
       border: none;
       padding: 0;
     }
   }
+}
+
+.site-footer {
+  margin-top: 4rem;
+  padding: 2rem 0;
+  border-top: 1px solid $color-border;
+  color: $color-text-light;
+  text-align: center;
 }
